@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+	--CL-primary-red: #ff4b4b;
+	--CL-primary-green: #1fb811;
+	--CL-primary-gray: #808080;
+	--CL-primary-blue-accented: #4b57ff;
+
+	--CL-neutral-white: #ffffff;
+	--CL-neutral-black: #000000;
+	--CL-neutral-transparent-black: #00000062;
+
+	--FF-primary-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--CL-neutral-white);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--CL-neutral-black);
+	border-radius: 10px;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	font-family: var(--FF-primary-poppins);
+	padding: 1em 0;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button {
+	width: 100%;
+	font-family: var(--FF-primary-poppins);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* App Styles */
+.app {
+	width: min(95%, 50rem);
+	box-shadow: 0 0 5px var(--CL-neutral-transparent-black);
+	padding: 2em;
+	border-radius: 2em;
+}
+
+.app__header {
+	text-align: center;
+	padding: 1em 0;
+}
+
+.app__title {
+	font-size: 3rem;
+}
+
+.app__description {
+	font-size: 1.25rem;
+	margin: 1em 0;
+}
+
+.app__form {
+	display: grid;
+	gap: 2em;
+	margin: 1em 0;
+}
+
+.app__fieldset {
+	border: none;
+	display: inherit;
+	gap: 0.5em;
+	font-size: 1.5rem;
+}
+
+.app__input,
+.app__button {
+	padding: 0.75em 1em;
+	box-shadow: 0 0 5px var(--CL-neutral-transparent-black);
+	border: none;
+	border-radius: 2em;
+}
+
+.app__button {
+	margin: 1em 0;
+	background-color: var(--CL-primary-blue-accented);
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.15s ease-out;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.app__result {
+	font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+	.app__button:hover {
+		background-color: var(--CL-neutral-black);
+	}
+}

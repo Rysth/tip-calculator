@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tip Calculator | RysthDesign</title>
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="app">
+			<header class="app__header">
+				<h1 class="app__title">Tip Calculator</h1>
+			</header>
+			<div class="app__content">
+				<h3 class="app__description">
+					Enter the bill amount and tip percentage to calculate the total.
+				</h3>
+
+				<form class="app__form" action="#">
+					<fieldset class="app__fieldset">
+						<label for="bill" class="app__label">Bill amount:</label>
+						<input
+							class="app__input"
+							type="number"
+							name="bill"
+							id="bill"
+							min="0"
+							required
+						/>
+					</fieldset>
+					<fieldset class="app__fieldset">
+						<label for="percentage" class="app__label"
+							>Tip percentage:</label
+						>
+						<input
+							class="app__input"
+							type="number"
+							name="percentage"
+							id="percentage"
+							min="0"
+							required
+						/>
+					</fieldset>
+					<button class="app__button" id="app__button" type="submit">
+						Calculate
+					</button>
+				</form>
+				<h4 id="app__result" class="app__result">Total:</h4>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
